@@ -14,10 +14,10 @@ class ThirdPage extends StatelessWidget {
           child: Container(
             width: double.infinity,
             child: Padding(
-              padding: const EdgeInsets.only(top:24.0),
+              padding: const EdgeInsets.only(top:24.0,left: 3,right: 3),
               child: Container(
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(topRight: Radius.circular(50),topLeft: Radius.circular(50)),
+                    borderRadius: BorderRadius.only(topRight: Radius.circular(50),topLeft: Radius.circular(50),),
                     gradient: LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
@@ -28,7 +28,7 @@ class ThirdPage extends StatelessWidget {
                         stops: [0.0,1.0]
                     ),
                     border: Border.all(
-                      color: Colors.white,
+                      color: Colors.white.withOpacity(0.8),
                       width: 2.5,
                     )
                 ),
@@ -84,6 +84,159 @@ class ThirdPage extends StatelessWidget {
                         )
                       ],
                     ),
+                    SizedBox(height: 50,),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: NetworkImage('https://images.melorra.com/image/upload/fl_progressive,f_auto,q_auto/v1595527022/live-melorra/dev/catalogue/images/C2/OPT/580/C16CC201C_P_580.jpg'),
+                                  fit: BoxFit.cover,
+                                ),
+                                border: Border.all(
+                                  color: Colors.white.withOpacity(0.4)
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Color(0xFF747373),
+                                    offset: const Offset(7,13),
+                                    spreadRadius: -4,
+                                    blurRadius: 12,
+                                  )
+                                ]
+                              ),
+                              height: 170,
+                              width: 155,
+                              child: MaterialButton(
+                                onPressed: (){},
+                                child: Text(
+                                  'CHAIN',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontFamily: "PlayfairDisplay",
+                                    color: Color(0xE13D3B3B),
+                                    fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage('https://i.pinimg.com/originals/4f/3e/32/4f3e3259e700ee04288e98dd059003d4.jpg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                  border: Border.all(
+                                      color: Colors.white.withOpacity(0.4)
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Color(0xFF747373),
+                                      offset: const Offset(7,13),
+                                      spreadRadius: -4,
+                                      blurRadius: 12,
+                                    )
+                                  ]
+                              ),
+                              height: 170,
+                              width: 155,
+                              child: MaterialButton(
+                                onPressed: (){},
+                                child: Text(
+                                  'RING',
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      fontFamily: "PlayfairDisplay",
+                                      color: Color(0xE13D3B3B),
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        SizedBox(height: 85,),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage('https://static.malabargoldanddiamonds.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/n/andaaaaaauhx.jpg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                  border: Border.all(
+                                      color: Colors.white.withOpacity(0.4)
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Color(0xFF747373),
+                                      offset: const Offset(7,13),
+                                      spreadRadius: -4,
+                                      blurRadius: 12,
+                                    )
+                                  ]
+                              ),
+                              height: 170,
+                              width: 155,
+                              child: MaterialButton(
+                                onPressed: (){},
+                                child: Text(
+                                  'PAYAL',
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      fontFamily: "PlayfairDisplay",
+                                      color: Color(0xE13D3B3B),
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage('https://staticimg.titan.co.in/Tanishq/Catalog/512219SOKABA00_2.jpg?impolicy=pqmed&imwidth=640'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                  border: Border.all(
+                                      color: Colors.white.withOpacity(0.4)
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Color(0xFF747373),
+                                      offset: const Offset(7,13),
+                                      spreadRadius: -4,
+                                      blurRadius: 12,
+                                    )
+                                  ]
+                              ),
+                              height: 170,
+                              width: 155,
+                              child: MaterialButton(
+                                onPressed: (){},
+                                child: Text(
+                                  'EARRINGS',
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      fontFamily: "PlayfairDisplay",
+                                      color: Color(0xE13D3B3B),
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        SizedBox(height: 50,),
+                      ],
+                    )
 
 
                     

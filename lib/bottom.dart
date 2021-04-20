@@ -20,6 +20,7 @@ class _BottomState extends State<Bottom> {
     return Scaffold(
       body: tabs[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+
         selectedItemColor: Color(0xffff8418),
         backgroundColor: Colors.white.withOpacity(0.7),
         currentIndex: _currentIndex,
@@ -39,7 +40,7 @@ class _BottomState extends State<Bottom> {
           ),
         ],
         onTap:(index){
-          _currentIndex=index;
+
           setState(() {
             _currentIndex=index;
           });

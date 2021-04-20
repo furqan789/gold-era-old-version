@@ -4,16 +4,20 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 
 class FirstPage extends StatefulWidget {
+
+
   @override
   _FirstPageState createState() => _FirstPageState();
+
 }
 
 class _FirstPageState extends State<FirstPage> {
+
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Color(0xF3FF9829).withOpacity(0.6),
+        color: Color(0xffe59139).withOpacity(.4),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -81,10 +85,11 @@ class _FirstPageState extends State<FirstPage> {
                           )
                       ),
                       width: double.infinity,
-                      height:MediaQuery.of(context).size.height*15/100,
+
                       child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: ListView(
+                            shrinkWrap: true,
                             children: [
                               CarouselSlider(
                                 items: [

@@ -6,7 +6,7 @@ class SecondPage extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xF3FF9829).withOpacity(0.6),
+      color: Color(0xffe7b875),
 
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -14,7 +14,7 @@ class SecondPage extends StatelessWidget {
           child: Container(
             width: double.infinity,
             child: Padding(
-              padding: const EdgeInsets.only(top:24.0),
+              padding: const EdgeInsets.only(top:23.0,left: 3,right: 3),
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(topRight: Radius.circular(50),topLeft: Radius.circular(50)),
@@ -28,8 +28,8 @@ class SecondPage extends StatelessWidget {
                       stops: [0.0,1.0]
                   ),
                   border: Border.all(
-                    color: Colors.white,
-                    width: 2.5,
+                    color: Colors.white.withOpacity(0.8),
+                    width: 3,
                   )
                 ),
                 width: double.infinity,
