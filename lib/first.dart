@@ -194,7 +194,7 @@ class FirstPage extends StatelessWidget {
                                 width: double.infinity,
                                 height: 130,
                                 child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
+
                                     children: [
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
@@ -208,7 +208,7 @@ class FirstPage extends StatelessWidget {
                                               fontFamily: "PlayfairDisplay",
                                             ),
                                           ),
-                                          SizedBox(width:100),
+                                          SizedBox(width:80),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -234,7 +234,7 @@ class FirstPage extends StatelessWidget {
                                         padding:EdgeInsets.symmetric(horizontal:0.0,vertical:12),
                                         child:Container(
                                           height:1.0,
-                                          width:230.0,
+                                          width:240.0,
                                           color: Color(0xCD872309),
                                         ),
                                       ),
