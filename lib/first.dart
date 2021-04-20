@@ -3,9 +3,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 
-class FirstPage extends StatelessWidget {
+class FirstPage extends StatefulWidget {
   @override
+  _FirstPageState createState() => _FirstPageState();
+}
 
+class _FirstPageState extends State<FirstPage> {
+  @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
@@ -162,7 +166,6 @@ class FirstPage extends StatelessWidget {
                       width: double.infinity,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(left: 30,right: 30,top:25,bottom: 30),
