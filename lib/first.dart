@@ -11,12 +11,13 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
                 Color(0xffe7b875),
-                Color(0xfff3e2ca),
+                Color(0xffe7b875),
               ]
           )
       ),
@@ -80,7 +81,7 @@ class FirstPage extends StatelessWidget {
                           ),
                           border: Border.all(
                             width: 1.5,
-                            color: Colors.white.withOpacity(0.3),
+                            color: Colors.white,
                           )
                       ),
                       width: double.infinity,
@@ -162,7 +163,7 @@ class FirstPage extends StatelessWidget {
                           ),
                           border: Border.all(
                             width: 1.5,
-                            color: Colors.white.withOpacity(0.3),
+                            color: Colors.white,
                           )
                       ),
                       width: double.infinity,
@@ -182,10 +183,12 @@ class FirstPage extends StatelessWidget {
                                           Colors.white.withOpacity(0.1),
                                         ]
                                     ),
+
                                     border: Border.all(
-                                      width: 1.8,
-                                      color: Colors.white.withOpacity(0.3),
-                                    )
+                                      width: 1.5,
+                                      color: Colors.white,
+                                    ),
+
                                 ),
                                 width: double.infinity,
                                 height: 130,
@@ -242,7 +245,7 @@ class FirstPage extends StatelessWidget {
                               padding: const EdgeInsets.only(left: 12,right: 12),
                               child: Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(35),
+                                    borderRadius: BorderRadius.circular(15),
                                     gradient: LinearGradient(
                                         colors: [
                                           Colors.white.withOpacity(0.8),
@@ -251,7 +254,7 @@ class FirstPage extends StatelessWidget {
                                     ),
                                     border: Border.all(
                                       width: 1.8,
-                                      color: Colors.white.withOpacity(0.3),
+                                      color: Colors.white,
                                     )
                                 ),
                                 width: double.infinity,
