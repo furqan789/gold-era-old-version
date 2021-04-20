@@ -194,10 +194,11 @@ class FirstPage extends StatelessWidget {
                                 width: double.infinity,
                                 height: 130,
                                 child: Column(
-
+                                    crossAxisAlignment: CrossAxisAlignment.stretch,
                                     children: [
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
+
                                         children: [
                                           Text(
                                             'Gold Price',
