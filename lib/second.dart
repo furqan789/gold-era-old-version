@@ -1,8 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/main.dart';
 
 class SecondPage extends StatelessWidget {
   @override
@@ -36,21 +33,25 @@ class SecondPage extends StatelessWidget {
                   )
                 ),
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height,
+
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Column(
                       children: [
-                        Text(
-                          'Price Estimation',
-                          style: TextStyle(
-                            fontSize: 25,
-                            fontFamily: "PlayfairDisplay",
-                            color: Color(0xCD872309),
-                            fontWeight: FontWeight.w600,
-                            letterSpacing: 1,
+
+                        Padding(
+                          padding: const EdgeInsets.only(top:30.0),
+                          child: Text(
+                            'Price Estimation',
+                            style: TextStyle(
+                              fontSize: 25,
+                              fontFamily: "PlayfairDisplay",
+                              color: Color(0xCD2B201F),
+                              fontWeight: FontWeight.w600,
+                              letterSpacing: 1,
+                            ),
                           ),
                         ),
                         Padding(
@@ -65,7 +66,7 @@ class SecondPage extends StatelessWidget {
                         Text(
                           'Current Price : Rs.xxxx.xx/gm',
                           style: TextStyle(
-                            fontSize: 15,
+                            fontSize: 18,
                             fontFamily: "PlayfairDisplay",
                             color: Color(0xCD872309),
                             fontWeight: FontWeight.w600,
@@ -74,7 +75,7 @@ class SecondPage extends StatelessWidget {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left:90,right: 90),
+                      padding: const EdgeInsets.only(left:90,right: 90,top:70,bottom: 70),
                       child: Container(
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
@@ -90,7 +91,7 @@ class SecondPage extends StatelessWidget {
                               width: 1.5,
                             )
                           ),
-
+                        height: 65,
                         width: double.infinity,
                         child: MaterialButton(
                           onPressed: (){},
@@ -115,7 +116,7 @@ class SecondPage extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: "PlayfairDisplay",
                             color: Color(0xCD872309),
-                            fontSize: 17,
+                            fontSize: 20,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -125,14 +126,14 @@ class SecondPage extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: "PlayfairDisplay",
                             color: Color(0xCD872309),
-                            fontSize: 17,
+                            fontSize: 20,
                             fontWeight: FontWeight.w600,
                           ),
                         )
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 12,right: 12),
+                      padding: const EdgeInsets.only(left: 12,right: 12,top: 50,bottom: 50),
                       child: Container(
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),

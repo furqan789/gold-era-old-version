@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:myapp/login.dart';
-import 'package:myapp/second.dart';
-import 'package:myapp/third.dart';
+
 
 class FirstPage extends StatelessWidget {
   @override
@@ -34,6 +32,8 @@ class FirstPage extends StatelessWidget {
           child: Container(
             width: double.infinity,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children:<Widget> [
                 Column(
                   children: [
@@ -151,7 +151,7 @@ class FirstPage extends StatelessWidget {
                     SizedBox(height:38),
                     Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(topRight:Radius.circular(35),topLeft:Radius.circular(35)),
+                          borderRadius: BorderRadius.circular(35),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -166,6 +166,7 @@ class FirstPage extends StatelessWidget {
                             color: Colors.white,
                           )
                       ),
+
                       width: double.infinity,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -242,7 +243,7 @@ class FirstPage extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 12,right: 12),
+                              padding: const EdgeInsets.only(left: 12,right: 12,bottom: 30),
                               child: Container(
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(15),
