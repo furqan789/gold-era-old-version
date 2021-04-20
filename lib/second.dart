@@ -6,7 +6,7 @@ class SecondPage extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xffe7b875),
+      color: Color(0xF3FF9829).withOpacity(0.6),
 
       child: Scaffold(
         backgroundColor: Colors.transparent,

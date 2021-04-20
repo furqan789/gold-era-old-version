@@ -40,7 +40,10 @@ class _BottomState extends State<Bottom> {
         ],
         onTap:(index){
           _currentIndex=index;
-          (context as Element).markNeedsBuild();
+          setState(() {
+            _currentIndex=index;
+          });
+
         },
       ),
 

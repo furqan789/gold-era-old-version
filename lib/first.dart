@@ -9,15 +9,7 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-
-          gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Color(0xffe7b875),
-                Color(0xffe7b875),
-              ]
-          )
+        color: Color(0xF3FF9829).withOpacity(0.6),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -81,7 +73,7 @@ class FirstPage extends StatelessWidget {
                           ),
                           border: Border.all(
                             width: 1.5,
-                            color: Colors.white,
+                            color: Colors.white.withOpacity(0.7),
                           )
                       ),
                       width: double.infinity,
@@ -163,7 +155,7 @@ class FirstPage extends StatelessWidget {
                           ),
                           border: Border.all(
                             width: 1.5,
-                            color: Colors.white,
+                            color: Colors.white.withOpacity(0.7),
                           )
                       ),
 
@@ -187,7 +179,7 @@ class FirstPage extends StatelessWidget {
 
                                     border: Border.all(
                                       width: 1.5,
-                                      color: Colors.white,
+                                      color: Colors.white.withOpacity(0.7),
                                     ),
 
                                 ),
