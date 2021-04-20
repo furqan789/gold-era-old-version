@@ -141,7 +141,7 @@ class SecondPage extends StatelessWidget {
                                 colors: [
                                   Colors.white.withOpacity(0.8),
                                   Colors.white.withOpacity(0.1),
-                                ]
+                                ]//i
                             ),
                             border: Border.all(
                               width: 1.8,
