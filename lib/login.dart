@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/first.dart';
-
+import 'package:myapp/bottom.dart';
 import 'package:passwordfield/passwordfield.dart';
 
 class LoginPage extends StatelessWidget {
@@ -21,12 +21,8 @@ class LoginPage extends StatelessWidget {
                 begin: Alignment.centerLeft,
                 end: Alignment.bottomRight,
                 colors:[
-
                   Color(0xfffcf6ba),
                   Color(0xfffcf6ba),
-
-
-
                 ]
             )
           ),
@@ -37,6 +33,7 @@ class LoginPage extends StatelessWidget {
       ),
 
       body: Container(
+
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
@@ -144,7 +141,7 @@ class LoginPage extends StatelessWidget {
                           height: 60,
                           minWidth: double.infinity,
                           onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => FirstPage()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Bottom()));
                           },
                           elevation: 0,
                           color: Color(0xFFA97829),
